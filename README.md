@@ -14,7 +14,7 @@ generated. Every number below is a count of providers.
 | --- | ---: | ---: | --- | --- |
 | queue | 10 | 10 | id 80%, name 80%, created_at 50% | queues 8, queue 2, call-queues 1, call_queues 1 |
 
-Cohort: 93 providers with harvested OpenAPI, 10 crosswalks. Of the providers exposing a queue: 70% create, 90% list, 80% fetch, 70% update, 60% delete. Generated 2026-11-10 by build.py.
+Cohort: 93 providers with harvested OpenAPI, 10 crosswalks. Of the providers exposing a queue: 70% create, 90% list, 80% fetch, 70% update, 60% delete. Generated 2026-11-11 by build.py.
 <!-- /commons:summary -->
 
 Shares are of the providers with a readable resource schema for that concept. The
