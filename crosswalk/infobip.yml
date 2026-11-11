@@ -1,0 +1,23 @@
+provider: infobip
+apis_io: https://apis.io/providers/infobip/
+context: contact-center
+generated: '2026-11-10'
+concepts:
+  queue:
+    path_segment:
+    - queues
+    - queue
+    properties:
+      id:
+      - id
+      - externalId
+      name: name
+      created_at: createdAt
+      status: Status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/infobip-conversations-openapi.json#DELETE /ccaas/1/agents/{agentId}/queues/{queueId}
+    - openapi/_original/infobip-conversations-openapi.json#DELETE /ccaas/1/queues/{queueId}
+    - openapi/_original/infobip-conversations-openapi.json#GET /ccaas/1/queues
+    - openapi/_original/infobip-conversations-openapi.json#GET /ccaas/voice/2/transfer/queues
+    - openapi/_original/infobip-conversations-openapi.json#PATCH /ccaas/voice/2/conversation/{conversationId}/transfer/queue

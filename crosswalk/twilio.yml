@@ -1,0 +1,18 @@
+provider: twilio
+apis_io: https://apis.io/providers/twilio/
+context: contact-center
+generated: '2026-11-10'
+concepts:
+  queue:
+    path_segment:
+    - queues
+    properties:
+      created_at: date_created
+      uri: uri
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/twilio-voice-openapi.yml#DELETE /Accounts/{AccountSid}/Queues/{QueueSid}.json
+    - openapi/_original/twilio-voice-openapi.yml#GET /Accounts/{AccountSid}/Queues.json
+    - openapi/_original/twilio-voice-openapi.yml#GET /Accounts/{AccountSid}/Queues/{QueueSid}.json
+    - openapi/_original/twilio-voice-openapi.yml#POST /Accounts/{AccountSid}/Queues.json
+    - openapi/_original/twilio-voice-openapi.yml#POST /Accounts/{AccountSid}/Queues/{QueueSid}.json

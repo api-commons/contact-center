@@ -1,0 +1,53 @@
+context: contact-center
+generated: '2026-11-10'
+adopters:
+- provider: 8x8
+  apis_io: https://apis.io/providers/8x8/
+  crosswalk: crosswalk/8x8.yml
+  concepts:
+  - queue
+- provider: assembled
+  apis_io: https://apis.io/providers/assembled/
+  crosswalk: crosswalk/assembled.yml
+  concepts:
+  - queue
+- provider: genesys
+  apis_io: https://apis.io/providers/genesys/
+  crosswalk: crosswalk/genesys.yml
+  concepts:
+  - queue
+- provider: infobip
+  apis_io: https://apis.io/providers/infobip/
+  crosswalk: crosswalk/infobip.yml
+  concepts:
+  - queue
+- provider: ringcentral
+  apis_io: https://apis.io/providers/ringcentral/
+  crosswalk: crosswalk/ringcentral.yml
+  concepts:
+  - queue
+- provider: signalwire
+  apis_io: https://apis.io/providers/signalwire/
+  crosswalk: crosswalk/signalwire.yml
+  concepts:
+  - queue
+- provider: twilio
+  apis_io: https://apis.io/providers/twilio/
+  crosswalk: crosswalk/twilio.yml
+  concepts:
+  - queue
+- provider: unifonic
+  apis_io: https://apis.io/providers/unifonic/
+  crosswalk: crosswalk/unifonic.yml
+  concepts:
+  - queue
+- provider: wazo
+  apis_io: https://apis.io/providers/wazo/
+  crosswalk: crosswalk/wazo.yml
+  concepts:
+  - queue
+- provider: zoom-phone
+  apis_io: https://apis.io/providers/zoom-phone/
+  crosswalk: crosswalk/zoom-phone.yml
+  concepts:
+  - queue

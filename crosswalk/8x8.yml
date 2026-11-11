@@ -1,0 +1,17 @@
+provider: 8x8
+apis_io: https://apis.io/providers/8x8/
+context: contact-center
+generated: '2026-11-10'
+concepts:
+  queue:
+    path_segment:
+    - queues
+    properties:
+      id: id
+      name: name
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/8x8-analytics-8x8-analytics-for-contact-center-real-time-metrics-api.json#GET /queues
+    - openapi/_original/8x8-analytics-8x8-analytics-for-contact-center-real-time-metrics-api.json#GET /queues/{id}
+    - openapi/_original/8x8-analytics-work-analytics-customer-data.json#GET /v2/pbxes/{pbxId}/queues
+    - openapi/_original/8x8-analytics-work-analytics-customer-data.json#GET /v2/pbxes/{pbxId}/sites/{siteId}/queues

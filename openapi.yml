@@ -1,0 +1,113 @@
+openapi: 3.1.0
+info:
+  title: Contact Center (API Commons)
+  version: 0.1.0-draft.20261110
+  description: 'The common Contact Center interface, distilled from the harvested OpenAPI of 93 providers in the
+    APIs.io catalog. Not a product: no one serves this API. It is the shape the market already shares, measured,
+    so that providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /queues:
+    get:
+      operationId: listQueues
+      summary: List queues
+      tags:
+      - Queues
+      x-commons-tier: core
+      x-commons-share: 0.9
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/Queue'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createQueue
+      summary: Create a queue
+      tags:
+      - Queues
+      x-commons-tier: core
+      x-commons-share: 0.7
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /queues/{queue_id}:
+    parameters:
+    - $ref: '#/components/parameters/queue_id'
+    get:
+      operationId: getQueue
+      summary: Get a queue
+      tags:
+      - Queues
+      x-commons-tier: core
+      x-commons-share: 0.8
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    patch:
+      operationId: updateQueue
+      summary: Update a queue
+      tags:
+      - Queues
+      x-commons-tier: core
+      x-commons-share: 0.7
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+    delete:
+      operationId: deleteQueue
+      summary: Delete a queue
+      tags:
+      - Queues
+      x-commons-tier: core
+      x-commons-share: 0.6
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+components:
+  schemas:
+    Queue:
+      $ref: ./schema/queue.json
+  parameters:
+    queue_id:
+      name: queue_id
+      in: path
+      required: true
+      schema:
+        type: string

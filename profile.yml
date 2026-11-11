@@ -1,0 +1,152 @@
+context: contact-center
+name: Contact Center
+generated: '2026-11-10'
+version: 0.1.0-draft.20261110
+status: draft
+cohort:
+  tags:
+  - Contact Center
+  - Call Center
+  - CCaaS
+  - Contact Center as a Service
+  - Workforce Engagement
+  - Customer Engagement
+  providers_with_harvested_openapi: 93
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded: {}
+duplicates:
+  khoros-ai:
+  - lithium
+  quo:
+  - openphone
+shared_specs: {}
+concepts:
+  queue:
+    segments_seen:
+      queues: 8
+      queue: 2
+      call-queues: 1
+      call_queues: 1
+    providers_exposing: 10
+    providers_with_readable_schema: 10
+    operations:
+    - operation: GET collection
+      providers: 9
+      share: 0.9
+      tier: core
+    - operation: GET item
+      providers: 8
+      share: 0.8
+      tier: core
+    - operation: POST collection
+      providers: 7
+      share: 0.7
+      tier: core
+    - operation: UPDATE item
+      providers: 7
+      share: 0.7
+      tier: core
+    - operation: DELETE item
+      providers: 6
+      share: 0.6
+      tier: core
+    - operation: UPDATE collection
+      providers: 3
+      share: 0.3
+      tier: extended
+    - operation: DELETE collection
+      providers: 2
+      share: 0.2
+      tier: long-tail
+    - operation: POST item
+      providers: 2
+      share: 0.2
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 8
+      share: 0.8
+      type: string
+      spellings:
+      - id
+      - external_id
+      - externalId
+    - name: name
+      tier: core
+      providers: 8
+      share: 0.8
+      type: string
+      spellings:
+      - name
+      - label
+    - name: created_at
+      tier: core
+      providers: 5
+      share: 0.5
+      type: string
+      spellings:
+      - date_created
+      - created_at
+      - dateCreated
+      - createdAt
+    - name: status
+      tier: extended
+      providers: 3
+      share: 0.3
+      type: string
+      spellings:
+      - status
+      - Status
+    - name: uri
+      tier: extended
+      providers: 3
+      share: 0.3
+      type: string
+      spellings:
+      - uri
+    long_tail_count: 130
+    long_tail_sample:
+    - account_sid
+    - average_wait_time
+    - current_size
+    - date_updated
+    - description
+    - extension_number
+    - friendly_name
+    - max_size
+    - member_ids
+    - page_size
+    - queue_id
+    - sid
+    - timezone
+    - updated_at
+    - acw_settings
+    - agent_owned_routing
+    - alert_timer
+    - announce_hold_time_on_entry
+    - api_version
+    - assistant
+    - audio_prompt_language
+    - auto_answer_only
+    - auto_assignment_algorithm
+    - bullseye
+    - call_id
+    - caller_id_mode
+    - caller_id_name
+    - calling_party_name
+    - calling_party_number
+    - canned_response_libraries
+    - channel
+    - conditional_group_activation
+    - conditional_group_routing
+    - consulting_user_id
+    - cost_center
+    - created_by
+    - data_quality
+    - date_enqueued
+    - default_scripts
+    - default_transcription_language

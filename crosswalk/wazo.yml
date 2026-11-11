@@ -1,0 +1,20 @@
+provider: wazo
+apis_io: https://apis.io/providers/wazo/
+context: contact-center
+generated: '2026-11-10'
+concepts:
+  queue:
+    path_segment:
+    - queues
+    properties:
+      id: id
+      name:
+      - name
+      - label
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/wazo-confd-api-openapi.yml#DELETE /queues/{queue_id}
+    - openapi/_original/wazo-confd-api-openapi.yml#GET /queues
+    - openapi/_original/wazo-confd-api-openapi.yml#GET /queues/{queue_id}
+    - openapi/_original/wazo-confd-api-openapi.yml#POST /queues
+    - openapi/_original/wazo-confd-api-openapi.yml#PUT /queues/{queue_id}
