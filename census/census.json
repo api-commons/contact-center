@@ -1,5 +1,5 @@
 {
- "cohort_size": 93,
+ "cohort_size": 94,
  "unreadable": [],
  "concepts": {
   "queue": {
@@ -196,6 +196,29 @@
      "openapi/_original/infobip-platform-full-openapi.json#GET /ccaas/voice/2/transfer/queues"
     ]
    },
+   "nice": {
+    "segments": [
+     "queues"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "agentId": "string",
+     "businessUnitId": "string",
+     "skillId": "string",
+     "skillName": "string",
+     "campaignId": "string",
+     "mediaType": "string",
+     "queueCount": "string",
+     "longestQueueTimeInSeconds": "string",
+     "earliestQueueTimeInUTC": "string"
+    },
+    "evidence": [
+     "openapi/_original/nice-realtimedata-realtime-openapi.yml#GET /agents/{agentId}/queues",
+     "openapi/_original/nice-realtimedata-realtime.json#GET /agents/{agentId}/queues"
+    ]
+   },
    "ringcentral": {
     "segments": [
      "call-queues"
@@ -270,6 +293,26 @@
      "openapi/_original/signalwire-compatibility-openapi.yml#POST /Accounts/{AccountSid}/Queues/{Sid}",
      "openapi/_original/signalwire-rest-openapi.yaml#DELETE /api/relay/rest/queues/{id}",
      "openapi/_original/signalwire-rest-openapi.yaml#GET /api/relay/rest/queues"
+    ]
+   },
+   "talkdesk": {
+    "segments": [
+     "queues"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "total": "integer",
+     "count": "integer",
+     "page": "integer",
+     "per_page": "integer",
+     "_embedded": "object",
+     "_links": "object"
+    },
+    "evidence": [
+     "openapi/_original/talkdesk-openapi.yml#GET /ccaas/queues",
+     "openapi/_original/talkdesk-public-bundle.json#GET /ccaas/queues"
     ]
    },
    "twilio": {
@@ -420,7 +463,6 @@
    "lower": [
     "8x8",
     "acoustic",
-    "amazon-lex",
     "amazon-pinpoint",
     "apptentive",
     "asapp",
@@ -456,7 +498,6 @@
     "genesys",
     "getvocal",
     "gladly",
-    "google-cloud-contact-center-ai",
     "gridspace",
     "handwrite-io",
     "hang",
@@ -479,6 +520,7 @@
     "moengage",
     "netcorecloud",
     "nextiva",
+    "nice",
     "observeai",
     "olark",
     "omnisend",
@@ -500,6 +542,7 @@
     "splio",
     "stellaconnect",
     "syllable",
+    "talkdesk",
     "trengo",
     "twilio",
     "unifonic",
@@ -540,6 +583,7 @@
     "moengage",
     "netcorecloud",
     "nextiva",
+    "nice",
     "observeai",
     "omnisend",
     "open-loyalty",
@@ -553,6 +597,7 @@
     "sleekflow",
     "splio",
     "syllable",
+    "talkdesk",
     "twilio",
     "unifonic",
     "wazo",
@@ -588,6 +633,7 @@
     "sobot",
     "splio",
     "syllable",
+    "talkdesk",
     "trengo",
     "twilio",
     "wazo",
@@ -596,7 +642,6 @@
    ],
    "camelCase": [
     "8x8",
-    "amazon-lex",
     "bright-pattern",
     "cisco-voice-portal",
     "cloudtalk",
@@ -615,6 +660,7 @@
     "moengage",
     "netcorecloud",
     "nextiva",
+    "nice",
     "olark",
     "open-loyalty",
     "pypestream",
@@ -622,6 +668,7 @@
     "replyrai",
     "responsys",
     "sobot",
+    "talkdesk",
     "unifonic",
     "wati"
    ],
@@ -634,7 +681,6 @@
     "emarsys",
     "getvocal",
     "gladly",
-    "google-cloud-contact-center-ai",
     "infobip",
     "iterable",
     "khoros-ai",
@@ -642,16 +688,17 @@
     "leanplum",
     "lithium",
     "netcorecloud",
+    "nice",
     "onesignal",
     "responsys",
     "ringcentral",
     "sobot",
+    "talkdesk",
     "twilio",
     "unifonic",
     "zoho-crm"
    ],
    "PascalCase": [
-    "amazon-lex",
     "authenticx",
     "braze",
     "bright-pattern",
@@ -659,8 +706,10 @@
     "gameball",
     "leadsquared",
     "netcorecloud",
+    "nice",
     "ringcentral",
     "signalwire",
+    "talkdesk",
     "twilio",
     "unifonic",
     "wazo",
@@ -694,7 +743,6 @@
     "encharge",
     "gameball",
     "gladly",
-    "google-cloud-contact-center-ai",
     "hang",
     "happyrobot",
     "hilos",
@@ -710,6 +758,7 @@
     "moengage",
     "netcorecloud",
     "nextiva",
+    "nice",
     "omnisend",
     "onesignal",
     "open-loyalty",
@@ -724,6 +773,7 @@
     "sobot",
     "splio",
     "stellaconnect",
+    "talkdesk",
     "twilio",
     "wazo",
     "whisperr-inc",
@@ -733,7 +783,6 @@
    "camelCase": [
     "8x8",
     "acoustic",
-    "amazon-lex",
     "asapp",
     "asapp3",
     "attentive",
@@ -754,7 +803,6 @@
     "gameball",
     "genesys",
     "gladly",
-    "google-cloud-contact-center-ai",
     "handwrite-io",
     "happyrobot",
     "infobip",
@@ -768,6 +816,7 @@
     "marketo",
     "moengage",
     "nextiva",
+    "nice",
     "omnisend",
     "open-loyalty",
     "openphone",
@@ -818,6 +867,7 @@
     "signalwire",
     "splio",
     "syllable",
+    "talkdesk",
     "trengo",
     "twilio",
     "wazo",
@@ -834,6 +884,15 @@
     "lithium",
     "mailmodo"
    ],
+   "other": [
+    "blueshift",
+    "emarsys",
+    "khoros-ai",
+    "lithium",
+    "moengage",
+    "nice",
+    "onesignal"
+   ],
    "PascalCase": [
     "authenticx",
     "braze",
@@ -841,14 +900,6 @@
     "outrival",
     "signalwire",
     "twilio"
-   ],
-   "other": [
-    "blueshift",
-    "emarsys",
-    "khoros-ai",
-    "lithium",
-    "moengage",
-    "onesignal"
    ]
   },
   "query_param": {
@@ -906,6 +957,7 @@
     "moengage",
     "netcorecloud",
     "nextiva",
+    "nice",
     "observeai",
     "omnisend",
     "onesignal",
@@ -925,6 +977,7 @@
     "splio",
     "stellaconnect",
     "syllable",
+    "talkdesk",
     "trengo",
     "twilio",
     "unifonic",
@@ -937,7 +990,6 @@
    "camelCase": [
     "8x8",
     "acoustic",
-    "amazon-lex",
     "amazon-pinpoint",
     "asapp",
     "asapp3",
@@ -960,7 +1012,6 @@
     "gameball",
     "genesys",
     "gladly",
-    "google-cloud-contact-center-ai",
     "happyrobot",
     "infobip",
     "insider",
@@ -973,6 +1024,7 @@
     "marketo",
     "moengage",
     "nextiva",
+    "nice",
     "observeai",
     "omnisend",
     "open-loyalty",
@@ -985,6 +1037,7 @@
     "ringcentral",
     "sleekflow",
     "sobot",
+    "talkdesk",
     "twilio",
     "unifonic",
     "wati",
@@ -1018,6 +1071,7 @@
     "marketo",
     "moengage",
     "netcorecloud",
+    "nice",
     "onesignal",
     "pypestream",
     "qualified-com",
@@ -1028,6 +1082,7 @@
     "splio",
     "stellaconnect",
     "syllable",
+    "talkdesk",
     "trengo",
     "twilio",
     "wazo",
@@ -1047,9 +1102,11 @@
     "hilos",
     "khoros-ai",
     "lithium",
+    "nice",
     "onesignal",
     "signalwire",
     "sobot",
+    "talkdesk",
     "trengo",
     "twilio",
     "zoho-crm"
@@ -1062,6 +1119,7 @@
     "khoros-ai",
     "lithium",
     "marketo",
+    "nice",
     "signalwire",
     "twilio",
     "unifonic",
@@ -1072,6 +1130,7 @@
     "acoustic",
     "amazon-pinpoint",
     "cordial",
+    "nice",
     "onesignal"
    ]
   },
@@ -1109,6 +1168,7 @@
     "moengage",
     "netcorecloud",
     "nextiva",
+    "nice",
     "omnisend",
     "onesignal",
     "openphone",
@@ -1121,6 +1181,7 @@
     "splio",
     "stellaconnect",
     "syllable",
+    "talkdesk",
     "twilio",
     "unifonic",
     "wazo",
@@ -1149,6 +1210,7 @@
     "lithium",
     "moengage",
     "netcorecloud",
+    "nice",
     "observeai",
     "open-loyalty",
     "outrival",
@@ -1156,6 +1218,7 @@
     "ringcentral",
     "signalwire",
     "syllable",
+    "talkdesk",
     "trengo",
     "twilio",
     "windstream-holdings",
@@ -1200,7 +1263,6 @@
     "csg",
     "gameball",
     "genesys",
-    "google-cloud-contact-center-ai",
     "happyrobot",
     "hilos",
     "infobip",
@@ -1210,9 +1272,11 @@
     "lithium",
     "marketo",
     "nextiva",
+    "nice",
     "pypestream",
     "signalwire",
     "sobot",
+    "talkdesk",
     "twilio",
     "wati",
     "zoom-phone"
@@ -1233,7 +1297,9 @@
     "klaus",
     "moengage",
     "nextiva",
-    "onesignal"
+    "nice",
+    "onesignal",
+    "talkdesk"
    ],
    "per_page": [
     "bird",
@@ -1249,6 +1315,7 @@
     "open-loyalty",
     "ringcentral",
     "splio",
+    "talkdesk",
     "windstream-holdings",
     "zoho-crm"
    ],
@@ -1257,8 +1324,8 @@
     "asapp3",
     "bird",
     "drift-com",
-    "google-cloud-contact-center-ai",
     "happyrobot",
+    "nice",
     "openphone",
     "quo",
     "ringcentral",
@@ -1287,8 +1354,19 @@
     "genesys",
     "iterable",
     "ringcentral",
+    "talkdesk",
     "wazo",
     "zoom-phone"
+   ],
+   "size": [
+    "8x8",
+    "drift-com",
+    "infobip",
+    "iterable",
+    "nice",
+    "observeai",
+    "regal-ai",
+    "talkdesk"
    ],
    "start": [
     "acoustic",
@@ -1309,13 +1387,12 @@
     "qualified-com",
     "splio"
    ],
-   "size": [
-    "8x8",
-    "drift-com",
-    "infobip",
-    "iterable",
-    "observeai",
-    "regal-ai"
+   "skip": [
+    "khoros-ai",
+    "lithium",
+    "nice",
+    "talkdesk",
+    "wazo"
    ],
    "max_results": [
     "genesys",
@@ -1328,16 +1405,12 @@
     "outrival",
     "qualified-com"
    ],
-   "skip": [
-    "khoros-ai",
-    "lithium",
-    "wazo"
+   "top": [
+    "emarsys",
+    "nice"
    ],
    "next": [
     "drift-com"
-   ],
-   "top": [
-    "emarsys"
    ]
   },
   "property": {
@@ -1348,6 +1421,7 @@
     "infobip",
     "ringcentral",
     "signalwire",
+    "talkdesk",
     "twilio",
     "unifonic",
     "wazo",
@@ -1356,6 +1430,7 @@
    "snake_case": [
     "assembled",
     "signalwire",
+    "talkdesk",
     "twilio",
     "wazo",
     "zoom-phone"
@@ -1363,11 +1438,13 @@
    "camelCase": [
     "genesys",
     "infobip",
+    "nice",
     "ringcentral",
     "unifonic"
    ],
    "other": [
-    "8x8"
+    "8x8",
+    "talkdesk"
    ],
    "PascalCase": [
     "infobip"

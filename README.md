@@ -12,9 +12,9 @@ generated. Every number below is a count of providers.
 <!-- commons:summary -->
 | Concept | Expose it | Readable schema | Core properties (share) | Collection named |
 | --- | ---: | ---: | --- | --- |
-| queue | 10 | 10 | id 80%, name 80%, created_at 50% | queues 8, queue 2, call-queues 1, call_queues 1 |
+| queue | 12 | 12 | id 67%, name 67% | queues 10, queue 2, call-queues 1, call_queues 1 |
 
-Cohort: 93 providers with harvested OpenAPI, 10 crosswalks. Of the providers exposing a queue: 70% create, 90% list, 80% fetch, 70% update, 60% delete. Generated 2026-11-11 by build.py.
+Cohort: 94 providers with harvested OpenAPI, 12 crosswalks. Of the providers exposing a queue: 58% create, 92% list, 67% fetch, 58% update, 50% delete. Generated 2026-11-12 by build.py.
 <!-- /commons:summary -->
 
 Shares are of the providers with a readable resource schema for that concept. The

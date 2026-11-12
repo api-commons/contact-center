@@ -2,13 +2,13 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://raw.githubusercontent.com/api-commons/contact-center/main/schema/queue.json",
   "title": "Queue",
-  "description": "The common queue in Contact Center, distilled from 10 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "description": "The common queue in Contact Center, distilled from 12 providers' own OpenAPI. Each property records the share of them that declare it.",
   "type": "object",
   "properties": {
     "id": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.8,
+      "x-commons-share": 0.667,
       "x-commons-providers": 8,
       "x-commons-spellings": [
         "id",
@@ -19,7 +19,7 @@
     "name": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.8,
+      "x-commons-share": 0.667,
       "x-commons-providers": 8,
       "x-commons-spellings": [
         "name",
@@ -28,8 +28,8 @@
     },
     "created_at": {
       "type": "string",
-      "x-commons-tier": "core",
-      "x-commons-share": 0.5,
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.417,
       "x-commons-providers": 5,
       "x-commons-spellings": [
         "date_created",
@@ -42,7 +42,7 @@
     "status": {
       "type": "string",
       "x-commons-tier": "extended",
-      "x-commons-share": 0.3,
+      "x-commons-share": 0.25,
       "x-commons-providers": 3,
       "x-commons-spellings": [
         "status",
@@ -52,7 +52,7 @@
     "uri": {
       "type": "string",
       "x-commons-tier": "extended",
-      "x-commons-share": 0.3,
+      "x-commons-share": 0.25,
       "x-commons-providers": 3,
       "x-commons-spellings": [
         "uri"
@@ -65,9 +65,9 @@
   "x-commons": {
     "context": "contact-center",
     "concept": "queue",
-    "providers": 10,
-    "generated": "2026-11-11",
-    "version": "0.1.0-draft.20261111",
+    "providers": 12,
+    "generated": "2026-11-12",
+    "version": "0.1.0-draft.20261112",
     "status": "draft"
   }
 }

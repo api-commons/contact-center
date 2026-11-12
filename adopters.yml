@@ -1,5 +1,5 @@
 context: contact-center
-generated: '2026-11-11'
+generated: '2026-11-12'
 adopters:
 - provider: 8x8
   apis_io: https://apis.io/providers/8x8/
@@ -21,6 +21,11 @@ adopters:
   crosswalk: crosswalk/infobip.yml
   concepts:
   - queue
+- provider: nice
+  apis_io: https://apis.io/providers/nice/
+  crosswalk: crosswalk/nice.yml
+  concepts:
+  - queue
 - provider: ringcentral
   apis_io: https://apis.io/providers/ringcentral/
   crosswalk: crosswalk/ringcentral.yml
@@ -29,6 +34,11 @@ adopters:
 - provider: signalwire
   apis_io: https://apis.io/providers/signalwire/
   crosswalk: crosswalk/signalwire.yml
+  concepts:
+  - queue
+- provider: talkdesk
+  apis_io: https://apis.io/providers/talkdesk/
+  crosswalk: crosswalk/talkdesk.yml
   concepts:
   - queue
 - provider: twilio

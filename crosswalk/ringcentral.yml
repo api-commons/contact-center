@@ -1,7 +1,7 @@
 provider: ringcentral
 apis_io: https://apis.io/providers/ringcentral/
 context: contact-center
-generated: '2026-11-11'
+generated: '2026-11-12'
 concepts:
   queue:
     path_segment:
@@ -11,7 +11,7 @@ concepts:
       name: name
       status: status
       uri: uri
-    core_coverage: 0.667
+    core_coverage: 1.0
     evidence:
     - openapi/_original/ringcentral-platform-openapi.yml#GET /restapi/v1.0/account/{accountId}/call-queues
     - openapi/_original/ringcentral-platform-openapi.yml#GET /restapi/v1.0/account/{accountId}/call-queues/{groupId}

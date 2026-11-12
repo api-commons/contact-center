@@ -1,7 +1,7 @@
 context: contact-center
 name: Contact Center
-generated: '2026-11-11'
-version: 0.1.0-draft.20261111
+generated: '2026-11-12'
+version: 0.1.0-draft.20261112
 status: draft
 cohort:
   tags:
@@ -11,7 +11,7 @@ cohort:
   - Contact Center as a Service
   - Workforce Engagement
   - Customer Engagement
-  providers_with_harvested_openapi: 93
+  providers_with_harvested_openapi: 94
 thresholds:
   core: 0.5
   extended: 0.2
@@ -26,50 +26,50 @@ shared_specs: {}
 concepts:
   queue:
     segments_seen:
-      queues: 8
+      queues: 10
       queue: 2
       call-queues: 1
       call_queues: 1
-    providers_exposing: 10
-    providers_with_readable_schema: 10
+    providers_exposing: 12
+    providers_with_readable_schema: 12
     operations:
     - operation: GET collection
-      providers: 9
-      share: 0.9
+      providers: 11
+      share: 0.917
       tier: core
     - operation: GET item
       providers: 8
-      share: 0.8
+      share: 0.667
       tier: core
     - operation: POST collection
       providers: 7
-      share: 0.7
+      share: 0.583
       tier: core
     - operation: UPDATE item
       providers: 7
-      share: 0.7
+      share: 0.583
       tier: core
     - operation: DELETE item
       providers: 6
-      share: 0.6
+      share: 0.5
       tier: core
     - operation: UPDATE collection
       providers: 3
-      share: 0.3
+      share: 0.25
       tier: extended
     - operation: DELETE collection
       providers: 2
-      share: 0.2
+      share: 0.167
       tier: long-tail
     - operation: POST item
       providers: 2
-      share: 0.2
+      share: 0.167
       tier: long-tail
     properties:
     - name: id
       tier: core
       providers: 8
-      share: 0.8
+      share: 0.667
       type: string
       spellings:
       - id
@@ -78,15 +78,15 @@ concepts:
     - name: name
       tier: core
       providers: 8
-      share: 0.8
+      share: 0.667
       type: string
       spellings:
       - name
       - label
     - name: created_at
-      tier: core
+      tier: extended
       providers: 5
-      share: 0.5
+      share: 0.417
       type: string
       spellings:
       - date_created
@@ -96,7 +96,7 @@ concepts:
     - name: status
       tier: extended
       providers: 3
-      share: 0.3
+      share: 0.25
       type: string
       spellings:
       - status
@@ -104,17 +104,18 @@ concepts:
     - name: uri
       tier: extended
       providers: 3
-      share: 0.3
+      share: 0.25
       type: string
       spellings:
       - uri
-    long_tail_count: 130
+    long_tail_count: 139
     long_tail_sample:
     - account_sid
     - average_wait_time
     - current_size
     - date_updated
     - description
+    - embedded
     - extension_number
     - friendly_name
     - max_size
@@ -125,6 +126,7 @@ concepts:
     - timezone
     - updated_at
     - acw_settings
+    - agent_id
     - agent_owned_routing
     - alert_timer
     - announce_hold_time_on_entry
@@ -134,11 +136,13 @@ concepts:
     - auto_answer_only
     - auto_assignment_algorithm
     - bullseye
+    - business_unit_id
     - call_id
     - caller_id_mode
     - caller_id_name
     - calling_party_name
     - calling_party_number
+    - campaign_id
     - canned_response_libraries
     - channel
     - conditional_group_activation
@@ -146,7 +150,3 @@ concepts:
     - consulting_user_id
     - cost_center
     - created_by
-    - data_quality
-    - date_enqueued
-    - default_scripts
-    - default_transcription_language

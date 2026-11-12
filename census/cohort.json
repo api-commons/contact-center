@@ -46,15 +46,6 @@
   ]
  },
  {
-  "slug": "amazon-lex",
-  "specs": [
-   "openapi/_original/amazon-lex-models-v2-openapi.yml",
-   "openapi/_original/amazon-lex-openapi.yml",
-   "openapi/_original/amazon-lex-runtime-v2-openapi.yml",
-   "openapi/_original/openapi.yml"
-  ]
- },
- {
   "slug": "amazon-pinpoint",
   "specs": [
    "openapi/_original/amazon-pinpoint-openapi-original.yaml",
@@ -333,6 +324,12 @@
   ]
  },
  {
+  "slug": "five9",
+  "specs": [
+   "openapi/_original/five9-open-messaging-api.postman_collection.json"
+  ]
+ },
+ {
   "slug": "gameball",
   "specs": [
    "openapi/_original/gameball-openapi.json"
@@ -354,12 +351,6 @@
   "slug": "gladly",
   "specs": [
    "openapi/_original/gladly-rest-api-openapi.yml"
-  ]
- },
- {
-  "slug": "google-cloud-contact-center-ai",
-  "specs": [
-   "openapi/_original/openapi.yml"
   ]
  },
  {
@@ -781,6 +772,163 @@
   ]
  },
  {
+  "slug": "nice",
+  "specs": [
+   "openapi/_original/nice-admin-addressbook-openapi.yml",
+   "openapi/_original/nice-admin-addressbook.json",
+   "openapi/_original/nice-admin-agentmessage-openapi.yml",
+   "openapi/_original/nice-admin-agentmessage.json",
+   "openapi/_original/nice-admin-agents-openapi.yml",
+   "openapi/_original/nice-admin-agents.json",
+   "openapi/_original/nice-admin-commitments-openapi.yml",
+   "openapi/_original/nice-admin-commitments.json",
+   "openapi/_original/nice-admin-contacts-openapi.yml",
+   "openapi/_original/nice-admin-contacts.json",
+   "openapi/_original/nice-admin-general-openapi.yml",
+   "openapi/_original/nice-admin-general.json",
+   "openapi/_original/nice-admin-groups-openapi.yml",
+   "openapi/_original/nice-admin-groups.json",
+   "openapi/_original/nice-admin-lists-openapi.yml",
+   "openapi/_original/nice-admin-lists.json",
+   "openapi/_original/nice-admin-routingattributes-openapi.yml",
+   "openapi/_original/nice-admin-routingattributes.json",
+   "openapi/_original/nice-admin-scriptschedules-openapi.yml",
+   "openapi/_original/nice-admin-scriptschedules.json",
+   "openapi/_original/nice-admin-skills-openapi.yml",
+   "openapi/_original/nice-admin-skills.json",
+   "openapi/_original/nice-admin-stationprofiles-openapi.yml",
+   "openapi/_original/nice-admin-stationprofiles.json",
+   "openapi/_original/nice-admin-stations-openapi.yml",
+   "openapi/_original/nice-admin-stations.json",
+   "openapi/_original/nice-admin-unavailablecodes-openapi.yml",
+   "openapi/_original/nice-admin-unavailablecodes.json",
+   "openapi/_original/nice-admin-workflowdata-openapi.yml",
+   "openapi/_original/nice-admin-workflowdata.json",
+   "openapi/_original/nice-agentphone-openapi.yml",
+   "openapi/_original/nice-agentphone.json",
+   "openapi/_original/nice-authentication-authenticate-openapi.yml",
+   "openapi/_original/nice-authentication-authenticate.json",
+   "openapi/_original/nice-authentication-globalauthentication-openapi.yml",
+   "openapi/_original/nice-authentication-globalauthentication.json",
+   "openapi/_original/nice-authentication-integrations-openapi.yml",
+   "openapi/_original/nice-authentication-integrations.json",
+   "openapi/_original/nice-authentication-universalapplication-openapi.yml",
+   "openapi/_original/nice-authentication-universalapplication.json",
+   "openapi/_original/nice-businessdata-businessdata-openapi.yml",
+   "openapi/_original/nice-businessdata-businessdata.json",
+   "openapi/_original/nice-chatrequests-openapi.yml",
+   "openapi/_original/nice-chatrequests.json",
+   "openapi/_original/nice-cxone-accesskeys-openapi.yml",
+   "openapi/_original/nice-cxone-accesskeys.json",
+   "openapi/_original/nice-cxone-authorizationmanagement-openapi.yml",
+   "openapi/_original/nice-cxone-authorizationmanagement.json",
+   "openapi/_original/nice-cxone-billing-openapi.yml",
+   "openapi/_original/nice-cxone-billing.json",
+   "openapi/_original/nice-cxone-correlationmanagement-openapi.yml",
+   "openapi/_original/nice-cxone-correlationmanagement.json",
+   "openapi/_original/nice-cxone-desktopprofiles-openapi.yml",
+   "openapi/_original/nice-cxone-desktopprofiles.json",
+   "openapi/_original/nice-cxone-division-openapi.yml",
+   "openapi/_original/nice-cxone-division.json",
+   "openapi/_original/nice-cxone-documents-openapi.yml",
+   "openapi/_original/nice-cxone-documents.json",
+   "openapi/_original/nice-cxone-drmanagement-openapi.yml",
+   "openapi/_original/nice-cxone-drmanagement.json",
+   "openapi/_original/nice-cxone-exportapi-openapi.yml",
+   "openapi/_original/nice-cxone-exportapi.json",
+   "openapi/_original/nice-cxone-scim-openapi.yml",
+   "openapi/_original/nice-cxone-scim.json",
+   "openapi/_original/nice-cxone-usermanagement-openapi.yml",
+   "openapi/_original/nice-cxone-usermanagement.json",
+   "openapi/_original/nice-dataextraction-dataextraction-openapi.yml",
+   "openapi/_original/nice-dataextraction-dataextraction.json",
+   "openapi/_original/nice-digital-attachment-openapi.yml",
+   "openapi/_original/nice-digital-attachment.json",
+   "openapi/_original/nice-digital-channel-openapi.yml",
+   "openapi/_original/nice-digital-channel.json",
+   "openapi/_original/nice-digital-contact-openapi.yml",
+   "openapi/_original/nice-digital-contact.json",
+   "openapi/_original/nice-digital-customer-openapi.yml",
+   "openapi/_original/nice-digital-customer.json",
+   "openapi/_original/nice-digital-customfields-openapi.yml",
+   "openapi/_original/nice-digital-customfields.json",
+   "openapi/_original/nice-digital-message-openapi.yml",
+   "openapi/_original/nice-digital-message.json",
+   "openapi/_original/nice-digital-routingqueue-openapi.yml",
+   "openapi/_original/nice-digital-routingqueue.json",
+   "openapi/_original/nice-digital-tag-openapi.yml",
+   "openapi/_original/nice-digital-tag.json",
+   "openapi/_original/nice-digital-thread-openapi.yml",
+   "openapi/_original/nice-digital-thread.json",
+   "openapi/_original/nice-digital-verificationtoken-openapi.yml",
+   "openapi/_original/nice-digital-verificationtoken.json",
+   "openapi/_original/nice-emails-openapi.yml",
+   "openapi/_original/nice-emails.json",
+   "openapi/_original/nice-feedbackmanagement-openapi.yml",
+   "openapi/_original/nice-feedbackmanagement.json",
+   "openapi/_original/nice-generic-storeandforward-openapi.yml",
+   "openapi/_original/nice-generic-storeandforward.json",
+   "openapi/_original/nice-interactionanalytics-interactions-openapi.yml",
+   "openapi/_original/nice-interactionanalytics-interactions.json",
+   "openapi/_original/nice-mediaplayback-mediadownload-openapi.yml",
+   "openapi/_original/nice-mediaplayback-mediadownload.json",
+   "openapi/_original/nice-mediaplayback-mediaplayback-openapi.yml",
+   "openapi/_original/nice-mediaplayback-mediaplayback.json",
+   "openapi/_original/nice-patron-callback-openapi.yml",
+   "openapi/_original/nice-patron-callback.json",
+   "openapi/_original/nice-patron-chatrequests-openapi.yml",
+   "openapi/_original/nice-patron-chatrequests.json",
+   "openapi/_original/nice-patron-workitem-openapi.yml",
+   "openapi/_original/nice-patron-workitem.json",
+   "openapi/_original/nice-personalcon-openapi.yml",
+   "openapi/_original/nice-personalcon.json",
+   "openapi/_original/nice-phonecalls-openapi.yml",
+   "openapi/_original/nice-phonecalls.json",
+   "openapi/_original/nice-platform-analytics-openapi.yml",
+   "openapi/_original/nice-platform-analytics.json",
+   "openapi/_original/nice-policy-policyinstance-openapi.yml",
+   "openapi/_original/nice-policy-policyinstance.json",
+   "openapi/_original/nice-privacy-gdpr-openapi.yml",
+   "openapi/_original/nice-privacy-gdpr.json",
+   "openapi/_original/nice-realtimedata-realtime-openapi.yml",
+   "openapi/_original/nice-realtimedata-realtime.json",
+   "openapi/_original/nice-realtimeinsights-openapi.yml",
+   "openapi/_original/nice-realtimeinsights.json",
+   "openapi/_original/nice-recording-businessdata-openapi.yml",
+   "openapi/_original/nice-recording-businessdata.json",
+   "openapi/_original/nice-recording-interactions-openapi.yml",
+   "openapi/_original/nice-recording-interactions.json",
+   "openapi/_original/nice-recording-recordingondemand-openapi.yml",
+   "openapi/_original/nice-recording-recordingondemand.json",
+   "openapi/_original/nice-recording-recordingstatus-openapi.yml",
+   "openapi/_original/nice-recording-recordingstatus.json",
+   "openapi/_original/nice-recording-screeninteractions-openapi.yml",
+   "openapi/_original/nice-recording-screeninteractions.json",
+   "openapi/_original/nice-reporting-reporting-dl-openapi.yml",
+   "openapi/_original/nice-reporting-reporting-dl.json",
+   "openapi/_original/nice-reporting-reporting-openapi.yml",
+   "openapi/_original/nice-reporting-reporting.json",
+   "openapi/_original/nice-scheduledcallbacks-openapi.yml",
+   "openapi/_original/nice-scheduledcallbacks.json",
+   "openapi/_original/nice-sessions-openapi.yml",
+   "openapi/_original/nice-sessions.json",
+   "openapi/_original/nice-supervisor-openapi.yml",
+   "openapi/_original/nice-supervisor.json",
+   "openapi/_original/nice-voicebiometrichub-openapi.yml",
+   "openapi/_original/nice-voicebiometrichub.json",
+   "openapi/_original/nice-voicemails-openapi.yml",
+   "openapi/_original/nice-voicemails.json",
+   "openapi/_original/nice-wfm-exportschedule-openapi.yml",
+   "openapi/_original/nice-wfm-exportschedule.json",
+   "openapi/_original/nice-wfm-exportsummary-openapi.yml",
+   "openapi/_original/nice-wfm-exportsummary.json",
+   "openapi/_original/nice-wfm-importallotment-openapi.yml",
+   "openapi/_original/nice-wfm-importallotment.json",
+   "openapi/_original/nice-workitems-openapi.yml",
+   "openapi/_original/nice-workitems.json"
+  ]
+ },
+ {
   "slug": "observeai",
   "specs": [
    "openapi/_original/observeai-reporting-apis-openapi.yml"
@@ -944,6 +1092,15 @@
   "slug": "syllable",
   "specs": [
    "openapi/_original/syllable-sdk-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "talkdesk",
+  "specs": [
+   "openapi/_original/talkdesk-authentication-api-readme-slices.json",
+   "openapi/_original/talkdesk-openapi.yml",
+   "openapi/_original/talkdesk-public-api-readme-slices.json",
+   "openapi/_original/talkdesk-public-bundle.json"
   ]
  },
  {
