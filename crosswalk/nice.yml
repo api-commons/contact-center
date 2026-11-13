@@ -1,0 +1,13 @@
+provider: nice
+apis_io: https://apis.io/providers/nice/
+context: contact-center
+generated: '2026-11-12'
+concepts:
+  queue:
+    path_segment:
+    - queues
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/nice-realtimedata-realtime-openapi.yml#GET /agents/{agentId}/queues
+    - openapi/_original/nice-realtimedata-realtime.json#GET /agents/{agentId}/queues

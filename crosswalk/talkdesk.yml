@@ -1,0 +1,13 @@
+provider: talkdesk
+apis_io: https://apis.io/providers/talkdesk/
+context: contact-center
+generated: '2026-11-12'
+concepts:
+  queue:
+    path_segment:
+    - queues
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/talkdesk-openapi.yml#GET /ccaas/queues
+    - openapi/_original/talkdesk-public-bundle.json#GET /ccaas/queues
